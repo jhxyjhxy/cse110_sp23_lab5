@@ -17,7 +17,12 @@ function init() {
 
     // Clear the dropdown options
     voiceSelectElement.innerHTML = '';
-  
+
+    // Default option
+    const defaultOption = document.createElement('option');
+    defaultOption.textContent = 'Select Voice';
+    voiceSelectElement.appendChild(defaultOption);
+    
     // Loop through the voices and add an option for each one to the dropdown
     for (let i = 0; i < voices.length; i++) {
       const option = document.createElement('option');
