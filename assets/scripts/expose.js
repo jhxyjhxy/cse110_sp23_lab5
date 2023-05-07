@@ -38,12 +38,16 @@ function init() {
     // Adjust the volume icon for each the volume value
     if (volumeValue == 0) {
       volumeImage.setAttribute('src', 'assets/icons/volume-level-0.svg');
+      volumeImage.setAttribute('alt', 'Volume level 0');
     } else if (volumeValue < 33) {
       volumeImage.setAttribute('src', 'assets/icons/volume-level-1.svg');
+      volumeImage.setAttribute('alt', 'Volume level 1');
     } else if (volumeValue < 67) {
       volumeImage.setAttribute('src', 'assets/icons/volume-level-2.svg');
+      volumeImage.setAttribute('alt', 'Volume level 2');
     } else {
       volumeImage.setAttribute('src', 'assets/icons/volume-level-3.svg');
+      volumeImage.setAttribute('alt', 'Volume level 3');
     }
 
     // Adjust the volume audio for each the volume value
